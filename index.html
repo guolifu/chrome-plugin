@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>timer</title>
+</head>
+<style>
+	ul li {
+		list-style-type: none;
+		/*line-height: 2;*/
+	}
+</style>
+<body style="width:500px;height:450px;">
+	<div style="text-align: center">
+		<input type="text" id="one_timestamp" placeholder="时间戳"/>
+		<select name="" id="one_select">
+			<option value="1" selected>秒</option>
+			<option value="2">毫秒</option>
+		</select>
+		<button id="one_change">转换</button>
+		<input type="text" id="one_date" />
+	</div>
+	<hr>
+
+	<div style="text-align: center">
+		<input type="text" id="two_date" placeholder="日期"/>
+		<select name="" id="two_select">
+			<option value="1">秒</option>
+			<option value="2">毫秒</option>
+		</select>
+		<button id="two_change">转换</button>
+		<input type="text" id="two_timestamp"/>
+	</div>
+	<div style="text-align: center" id="chat">
+		<ul id="chat-ul">
+
+		</ul>
+	</div>
+	<div style="position:relative;">
+		<div style="position: fixed;bottom: 0;left: 25%;transform: translate(-50%, -50%);">
+			<input type="text" id="chat-val"/>
+			<button id="chat-send">发送</button>
+			<button id="f5">刷新</button>
+		</div>
+		<div style="position: fixed;bottom: 0;left: 70%;transform: translate(-50%, -50%);">
+			——雷神Chrome插件
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/time.js"></script>
